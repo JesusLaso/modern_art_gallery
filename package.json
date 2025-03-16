@@ -1,0 +1,17 @@
+{
+  "name": "modern_art_gallery",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.85.1",
+    "vite": "^6.2.0"
+  }
+}
