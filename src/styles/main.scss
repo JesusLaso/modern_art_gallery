@@ -28,12 +28,7 @@ img{
     flex-direction: column;
     height: 58%;
     justify-content: space-between;
-
-
-
-
-
-
+    align-items: center;
 }
 .hero__title{
     font-family: 'Big Shoulders Display';
@@ -50,6 +45,7 @@ img{
 .hero__link{
     display: flex;
     text-decoration: none;
+    width: fit-content;
     &:hover{
         .hero__link-p{
             background-color: #D5966C;
@@ -204,3 +200,69 @@ img{
         width: 40%;
     }
   }
+@media(min-width: 1440px){
+    .hero{
+        background: linear-gradient(to right, #151515 30%, transparent 30%, transparent 70%, #ffffff 70%), 
+                    url('../assets/images/couple_gallery.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%, 40% 100%;
+        background-position: center;
+        background-attachment: fixed;
+        justify-content: center;
+    }
+    .hero__text{
+       display: grid;
+       grid-template-areas: "title . description"
+                            ". . link";                
+        column-gap: 10em;
+        padding: 0;
+        width: 80%;
+        padding-bottom: 3em;
+    }
+    .hero__title{
+        grid-area: title;
+        font-size: 6em;
+        color: #ffffff;
+        padding-left: .1em;
+    }
+    .hero__description{
+        grid-area: description;
+        font-size: 1.5em;
+        line-height: 1.35em;
+    }
+    .hero__link{
+        grid-area: link;
+        margin-bottom: 10em;
+    }
+    .main__info{
+        padding:  11em;
+        .hidden_1440{
+            display: none;
+        }
+    }
+    .main__info-top{
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .top__container{
+        padding-right: 10em;
+    }
+    .main__info-bottom{
+        grid-template-areas: "photo1 photo1 photo1 photo2 photo2"
+                              "photo1 photo1 photo1 box1 box1";
+        gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 1em;
+    }
+    .bottom__photo-bottom{
+        height: 100%;
+    }
+    .footer{
+        padding-left: 11em;
+        padding-right: 11em;
+    }
+} 
+
+@media(min-width: 1700px){
+
+}
