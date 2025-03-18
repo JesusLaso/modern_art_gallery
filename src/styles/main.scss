@@ -63,6 +63,7 @@ img{
 
 .hero__link-p{
     background-color: #151515;
+    font-family: 'big Shoulders Display';
 }
 
 .hero__link-i{
@@ -265,4 +266,75 @@ img{
 
 @media(min-width: 1700px){
 
+}
+.location__map{
+    position: relative;
+    height: 60vh;
+}
+.location__map-image{
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+.location__link{
+    position: absolute;
+    top: 0;
+}
+.location__link-p{
+    letter-spacing: .4em;
+}
+.location__text{
+    background-color: #151515;
+    padding: 2em 1em;
+}
+.location__icon{
+    position: absolute;
+    left: 42%;
+    top: 44%;
+    width: 3.5em;
+    height: 3.5em;
+    z-index: 1;
+}
+.location__icon::after{
+    content: "";
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    width: 20em;
+    height: 20em;
+    background-color: #6cd591;
+    border-radius: 50%;
+    z-index: 2000;
+}
+.location__title{
+    font-family: 'Big Shoulders Display';
+    color: #ffffff;
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+.address__title{
+    font-family: 'Big Shoulders Display';
+    color: #D5966C;
+    font-size: 1.8em;
+    padding-bottom: .6em;
+}
+.address__info{
+    color: #ffffff;
+    line-height: 1.7em;
+    padding-bottom: 1em;
+}
+.address__text{
+    color: #ffffff;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
+.location__footer{
+    background-color: #D5966C;
+    &>*{
+        color: #151515;
+    }
+    .social__icon-location{
+        color: #151515;
+    }
 }
