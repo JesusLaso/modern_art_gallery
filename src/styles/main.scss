@@ -145,6 +145,81 @@ img{
     color: #ffffff;
     font-size: 1.5em;
 }
+
+/*Estilos para 'location.html'*/
+
+.location__map{
+    position: relative;
+    height: 60vh;
+}
+.location__map-image{
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+.location__link{
+    position: absolute;
+    top: 0;
+}
+.location__link-p{
+    letter-spacing: .4em;
+}
+.location__text{
+    background-color: #151515;
+    padding: 2em 1em;
+}
+.location__container-icon{ 
+    position: absolute;
+    left: 43%;
+    top: 46%;
+    width: 3em;
+    z-index: 1;
+}
+.location__container-icon::after{
+    content: "";
+    position: absolute;
+    top: 13%; 
+    left: 29.5%;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #D5966C;
+    border-radius: 50%;
+    z-index: 2;
+}
+.location__title{
+    font-family: 'Big Shoulders Display';
+    color: #ffffff;
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+.address__title{
+    font-family: 'Big Shoulders Display';
+    color: #D5966C;
+    font-size: 1.8em;
+    padding-bottom: .6em;
+}
+.address__info{
+    color: #ffffff;
+    line-height: 1.7em;
+    padding-bottom: 1em;
+}
+.address__text{
+    color: #ffffff;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
+.location__footer{
+    background-color: #D5966C;
+    &>*{
+        color: #151515;
+    }
+    .social__icon-location{
+        color: #151515;
+    }
+}
+
+
 @media (min-width: 760px) {
     .hero{
         display: flex;
@@ -200,7 +275,32 @@ img{
     .footer__info{
         width: 40%;
     }
+
+    /*Estilos para 'location.html'*/
+
+    .location__link{
+        left: 3em;
+    }
+    
+    .location__container-icon{
+        left: 47%;
+    }
+    .location__text{
+        display: flex;
+        justify-content: space-between;
+        padding: 5em 3em;
+    }
+    .location__title{
+        width: 30%;
+    }
+    .address{
+        width: 50%;
+    }
+    .location__footer{
+        padding-bottom: 1em;
+    }
   }
+
 @media(min-width: 1440px){
     .hero{
         background: linear-gradient(to right, #151515 30%, transparent 30%, transparent 70%, #ffffff 70%), 
@@ -262,79 +362,35 @@ img{
         padding-left: 11em;
         padding-right: 11em;
     }
+
+        /*Estilos para 'location.html'*/
+    
+    .location__text{  
+        justify-content: space-around;
+        height: 30vh;
+    }    
+    .location__title{
+        width: 10%;
+        font-size: 3.5em;
+    }
+    .address{
+        width: 40%;
+    }
+    .address__title{
+        font-size: 2.5em
+    }
+    .address__info{
+        font-size: 1.4em 
+    }
+    .address__text{
+        font-size: 1.4em;
+    }
 } 
+
+
+
 
 @media(min-width: 1700px){
 
 }
-.location__map{
-    position: relative;
-    height: 60vh;
-}
-.location__map-image{
-    height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-}
-.location__link{
-    position: absolute;
-    top: 0;
-}
-.location__link-p{
-    letter-spacing: .4em;
-}
-.location__text{
-    background-color: #151515;
-    padding: 2em 1em;
-}
-.location__icon{
-    position: absolute;
-    left: 42%;
-    top: 44%;
-    width: 3.5em;
-    height: 3.5em;
-    z-index: 1;
-}
-.location__icon::after{
-    content: "";
-    position: absolute;
-    bottom: 20px; 
-    left: 50%;
-    width: 20em;
-    height: 20em;
-    background-color: #6cd591;
-    border-radius: 50%;
-    z-index: 2000;
-}
-.location__title{
-    font-family: 'Big Shoulders Display';
-    color: #ffffff;
-    font-size: 3em;
-    padding-bottom: .5em;
-}
-.address__title{
-    font-family: 'Big Shoulders Display';
-    color: #D5966C;
-    font-size: 1.8em;
-    padding-bottom: .6em;
-}
-.address__info{
-    color: #ffffff;
-    line-height: 1.7em;
-    padding-bottom: 1em;
-}
-.address__text{
-    color: #ffffff;
-    line-height: 1.5em;
-    font-size: 1.1em;
-    padding-bottom: 1em;
-}
-.location__footer{
-    background-color: #D5966C;
-    &>*{
-        color: #151515;
-    }
-    .social__icon-location{
-        color: #151515;
-    }
-}
+
